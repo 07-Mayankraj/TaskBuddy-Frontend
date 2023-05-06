@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import NoticeCard from './NoticeCard';
-
 function Notice() {
     let [data, setData] = useState([])
     const [show] = useState('');
@@ -25,7 +24,7 @@ function Notice() {
         let obj = {
             name: prompt('enter name'),
             title: prompt('enter title'),
-            dec: prompt('enter dec')
+            description: prompt('enter dec')
         }
         console.log(obj);
         try {
